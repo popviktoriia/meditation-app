@@ -1,0 +1,130 @@
+#myVideo {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+.main-container-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.header-container-choice {
+    margin-top: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.timer-choice {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.timer-five-minutes, .timer-ten-minutes {
+    display: flex;
+    justify-content:center;
+    width: 40%;
+    
+}
+.timer-five-minutes {
+    margin-bottom: 0;
+}
+.timer-ten-minutes {
+    margin-top: 0;
+}
+#countFiveMinutes, #countTenMinutes {
+    font-size: 60px;
+    border-left: 2px #F7ECDE solid;
+    padding: 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #F7ECDE;
+}
+#playButtonFive, #playButtonTen {
+    background-color: transparent;
+    width: 150px;
+    height: 90px;
+    align-self: center;
+    border: none;
+}
+h3 {
+    font-size: 70px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #DFBB9D;
+    letter-spacing: 1em;
+}
+@media all and (max-width: 1100px) { 
+    .timer-five-minutes, .timer-ten-minutes {
+        width: 70%;
+        align-self:center;
+     }
+}
+
+@media all and (max-width: 900px) {
+    .timer-choice {
+        display: flex;
+        flex-direction: column;
+    }
+    #playButtonFive {
+        margin-left: 25px;
+    } 
+}
+@media all and (max-width: 600px) {
+    .header-container-choice {
+        margin-top: 90px;
+    }
+    h3 {
+        font-size: 55px;
+        letter-spacing: 0.7em;
+    }
+    #countFiveMinutes, #countTenMinutes {
+        font-size: 50px;
+    }
+    .timer-five-minutes, .timer-ten-minutes {
+        width: 80%;
+    }
+    #playButtonFive {
+        margin-left: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    #countFiveMinutes, #countTenMinutes {
+        font-size: 45px;
+        margin-left: 10px;
+    }
+    .timer-five-minutes, .timer-ten-minutes {
+        width: 100%;
+    }
+}
+@media all and (max-width: 400px) {
+    h3 {
+        font-size: 50px;
+    }
+    #countFiveMinutes, #countTenMinutes {
+        font-size: 35px;
+        margin-left: 5px;
+    }
+    img {
+        width: 40px;
+    }
+    #playButtonFive {
+        margin-left: 10px;
+    }
+}
+@media all and (max-width: 300px) {
+    h3 {
+        font-size: 40px;
+    }
+    #countFiveMinutes, #countTenMinutes {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    img {
+        width:30px;
+    }
+}

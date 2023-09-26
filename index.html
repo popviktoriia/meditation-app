@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+
+        <img id="yoga" src="https://img.icons8.com/external-ddara-fill-ddara/512/external-yoga-yoga-poses-ddara-fill-ddara-19.png" alt="yogaIcon" width="100px">
+        <h1>Free your  mind for 5 or 10 minutes</h1>
+        <h2>Choose your sound for today</h2>
+        <h3>Start meditating</h3>
+        
+        <div id="choice">
+            
+            <div class="sounds">
+                <img src="https://img.icons8.com/external-prettycons-lineal-prettycons/512/external-rain-weather-prettycons-lineal-prettycons-3.png" alt="rainIcon" width="50px" height="50px">
+                <a href="rain/rain.html">rain</a>
+            </div>
+
+            <div class="sounds">
+                <img src="https://img.icons8.com/external-solid-style-bomsymbols-/512/external-ocean-water-solid-solid-style-bomsymbols-.png" alt="oceanIcon" width="50px" height="50px">
+                <a href="ocean/ocean.html">ocean</a>
+            </div>
+
+            <div class="sounds">
+                <img src="https://img.icons8.com/glyph-neue/512/forest.png" alt="natureIcon" width="50px" height="50px">
+                <a href="forest/forest.html">forest</a>
+            </div>
+
+            <div class="sounds">
+                <img src="https://img.icons8.com/pastel-glyph/512/piano.png" alt="pianoIcon" width="50px" height="50px">
+                <a href="piano/piano.html">music</a>
+            </div>
+        </div>
+    </div>
+
+    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+        <source src="meditate.mp4" type="video/mp4">
+    </video>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
